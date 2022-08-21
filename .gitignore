@@ -1,0 +1,59 @@
+## React
+
+# dependencies
+./dio-library-site/dio-library-site/node_modules
+./dio-library-site/dio-library-site/.pnp
+./dio-library-site/dio-library-site/.pnp.js
+
+# testing
+./dio-library-site/dio-library-site/coverage
+
+# production
+./dio-library-site/dio-library-site/build
+
+# misc
+./dio-library-site/dio-library-site/.DS_Store
+./dio-library-site/dio-library-site/.env.local
+./dio-library-site/dio-library-site/.env.development.local
+./dio-library-site/dio-library-site/.env.test.local
+./dio-library-site/dio-library-site/.env.production.local
+
+./dio-library-site/dio-library-site/npm-debug.log*
+./dio-library-site/dio-library-site/yarn-debug.log*
+./dio-library-site/dio-library-site/yarn-error.log*
+
+## Back-End
+
+library/HELP.md
+library/target/
+library/!.mvn/wrapper/maven-wrapper.jar
+library/!**/src/main/**/target/
+library/!**/src/test/**/target/
+
+### STS ###
+library/.apt_generated
+library/.classpath
+library/.factorypath
+library/.project
+library/.settings
+library/.springBeans
+library/.sts4-cache
+
+### IntelliJ IDEA ###
+library/.idea
+library/*.iws
+library/*.iml
+library/*.ipr
+
+### NetBeans ###
+library/nbproject/private/
+library/nbbuild/
+library/dist/
+library/nbdist/
+library/.nb-gradle/
+library/build/
+library/!**/src/main/**/build/
+library/!**/src/test/**/build/
+
+### VS Code ###
+library/.vscode/

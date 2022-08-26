@@ -1,26 +1,27 @@
 ## React
 
-# dependencies
-./dio-library-site/dio-library-site/node_modules
-./dio-library-site/dio-library-site/.pnp
-./dio-library-site/dio-library-site/.pnp.js
+# Dependencies
+
+dio-library-site/dio-library-site/node_modules/
+dio-library-site/dio-library-site/pnp
+dio-library-site/dio-library-site/pnp.js
 
 # testing
-./dio-library-site/dio-library-site/coverage
+dio-library-site/dio-library-site/coverage
 
 # production
-./dio-library-site/dio-library-site/build
+dio-library-site/dio-library-site/build
 
 # misc
-./dio-library-site/dio-library-site/.DS_Store
-./dio-library-site/dio-library-site/.env.local
-./dio-library-site/dio-library-site/.env.development.local
-./dio-library-site/dio-library-site/.env.test.local
-./dio-library-site/dio-library-site/.env.production.local
+dio-library-site/dio-library-site/DS_Store
+dio-library-site/dio-library-site/env.local
+dio-library-site/dio-library-site/env.development.local
+dio-library-site/dio-library-site/env.test.local
+dio-library-site/dio-library-site/env.production.local
 
-./dio-library-site/dio-library-site/npm-debug.log*
-./dio-library-site/dio-library-site/yarn-debug.log*
-./dio-library-site/dio-library-site/yarn-error.log*
+dio-library-site/dio-library-site/npm-debug.log*
+dio-library-site/dio-library-site/yarn-debug.log*
+dio-library-site/dio-library-site/yarn-error.log*
 
 ## Back-End
 

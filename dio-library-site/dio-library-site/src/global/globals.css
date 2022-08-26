@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/*RESETS*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: #96ff58;
+  text-decoration: none;
+}
+
+/*GLOBALS*/
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #56b639;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #75f64e;
+}
+
+button:active {
+  background-color: #3f8729;
+  transition: 0.1s;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+thead {
+  background-color: #3f8729;
+}
+
+tr:nth-child(odd) {
+  background-color: #2f373f;
+}
+
+td {
+  padding: 5px;
+}
+
+.modal {
+  position: absolute;
+  padding: 30px;
+  margin: 30px auto;
+  width: 800px;
+  max-width: 90%;
+  height: 80vh;
+  border-radius: 15px;
+  background-color: #313131;
+  color: whitesmoke;
+}
+
+.modal table {
+  background-color: #2f373f;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000007f;
+}
+
+input[type="text"] {
+  background-color: #313131;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,28 @@
+export default function Client(props) {
+  return(
+    <table>
+      <tbody>
+        <tr>
+          <td>ID</td>
+          <td>{props.id}</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>{props.name}</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>{props.age}</td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>{props.gender}</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>{props.address}</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}

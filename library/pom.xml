@@ -94,7 +94,7 @@
 				<configuration>
 					<source>1.8</source> <!-- depending on your project -->
 					<target>1.8</target> <!-- depending on your project -->
-					<annotationProcessorPaths><annotationProcessorPaths>
+					<annotationProcessorPaths>
 						<path>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
@@ -110,7 +110,6 @@
 							<artifactId>lombok-mapstruct-binding</artifactId>
 							<version>0.1.0</version>
 						</path>
-					</annotationProcessorPaths>
 						<!-- other annotation processors -->
 						<path>
 							<groupId>org.projectlombok</groupId>

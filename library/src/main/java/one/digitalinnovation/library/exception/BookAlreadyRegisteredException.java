@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class BookAlreadyRegisteredException extends Exception {
 
 	public BookAlreadyRegisteredException(String bookName) {
-		super(String.format("Beer with name %s already registered in the system.", bookName));
+		super(String.format("Book with name %s already registered in the system.", bookName));
 	}
 
 }

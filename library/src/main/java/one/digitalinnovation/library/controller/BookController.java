@@ -23,33 +23,39 @@ public class BookController {
 	private final BookService bookService;
 
 	@PostMapping
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.CREATED)
 	public BookDTO createBook(@RequestBody @Valid BookDTO bookDTO) throws BookAlreadyRegisteredException {
 		return bookService.createBook(bookDTO);
 	}
 
 	@GetMapping
+	@CrossOrigin
 	public List<BookDTO> listBooks() {
 		return bookService.listAll();
 	}
 
 	@GetMapping("/{title}")
+	@CrossOrigin
 	public BookDTO findByTitle(@PathVariable String title) throws BookNotFoundException {
 		return bookService.findByTitle(title);
 	}
 
 	@DeleteMapping("/{id}")
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deleteById(@PathVariable Long id) throws BookNotFoundException {
 		bookService.deleteById(id);
 	}
 
 	@PatchMapping("/{id}/increment")
+	@CrossOrigin
 	public BookDTO increment(@PathVariable Long id, @RequestBody @Valid QuantityDTO quantityDTO) throws BookNotFoundException, BookStockExceededException {
 		return bookService.increment(id, quantityDTO.getQuantity());
 	}
 
 	@PatchMapping("/{id}/decrement")
+	@CrossOrigin
 	public BookDTO decrement(@PathVariable Long id, @RequestBody @Valid QuantityDTO quantityDTO) throws BookNotFoundException, BookStockInsufficientException {
 		return bookService.decrement(id, quantityDTO.getQuantity());
 	}

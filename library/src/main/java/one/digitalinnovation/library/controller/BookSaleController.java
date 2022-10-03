@@ -21,6 +21,7 @@ public class BookSaleController {
 	private final BookSaleRepo bookSaleRepo;
 
 	@PostMapping
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.CREATED)
 	public BookSaleDTO createBookSale(@RequestBody @Valid BookSaleDTO bookSaleDTO) {
 
@@ -28,16 +29,19 @@ public class BookSaleController {
 	}
 
 	@GetMapping
+	@CrossOrigin
 	public List<BookSaleDTO> listBookSales() {
 		return bookSaleService.listAll();
 	}
 
 	@GetMapping("/{id}")
+	@CrossOrigin
 	public BookSaleDTO findById(@PathVariable Long id) throws BookSaleNotFoundException {
 		return bookSaleService.findById(id);
 	}
 
 	@DeleteMapping("/{id}")
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deleteById(@PathVariable Long id) throws BookSaleNotFoundException {
 		bookSaleService.deleteById(id);

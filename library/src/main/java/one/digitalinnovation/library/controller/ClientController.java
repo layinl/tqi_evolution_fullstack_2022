@@ -25,22 +25,26 @@ public class ClientController {
 	private final ClientService clientService;
 
 	@PostMapping
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.CREATED)
 	public ClientDTO createBook(@RequestBody @Valid ClientDTO clientDTO) throws ClientAlreadyRegisteredException {
 		return clientService.createClient(clientDTO);
 	}
 
 	@GetMapping
+	@CrossOrigin
 	public List<ClientDTO> listBooks() {
 		return clientService.listAll();
 	}
 
 	@GetMapping("/{name}")
+	@CrossOrigin
 	public ClientDTO findByTitle(@PathVariable String name) throws ClientNotFoundException {
 		return clientService.findByName(name);
 	}
 
 	@DeleteMapping("/{id}")
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deleteById(@PathVariable Long id) throws ClientNotFoundException {
 		clientService.deleteById(id);
